@@ -1,39 +1,101 @@
-<p><h3>10:00 - 11:00 iStandUK: How data standards and data sharing can transform local public services</h3><br>##Session title: How data standards and data sharing can transform local public services<br>
-##Short description
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  DataConnect21
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">DataConnect21</a>
+      </li>
+      <!--<li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>-->
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     <h1 class="govuk-heading-xl">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+		<img src="/public/images/DataConnect21_logo.png" alt="DataConnect Week 2021" width="25%"  style="margin: 0 0 40px 5px;">
+   		
+   		
+
+<p><h2>DataConect21 Schedule</h2></p>
+   		
+	  
+
+<p>By date:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="/Monday">Monday 27th September</a></li>
+        <li><a href="/Tuesday">Tuesday 28th September</a></li>
+        <li><a href="/Wednesday">Wednesday 29th September</a></li>
+        <li><a href="/Thursday">Thursday 30th September</a></li>
+        <li><a href="/Friday">Friday 1st October</a></li>
+
+      </ul>
+      
+      
+
+<p><h3>10:00 - 11:00 iStandUK: How data standards and data sharing can transform local public services</h3><br>
+Session title:<br>: How data standards and data sharing can transform local public services
+
+<br>Short description<br>
 The session will showcase how standards and data can be used to find and support vulnerable people, and propose steps towards an ecosystem of on-demand data, services and trust.
 
-##Organiser(s) and organisation
+<br>Organiser(s) and organisation<br>
 Paul Davidson is the Chief Digital Officer of Sedgemoor District Council, and the Director of Standards for iStandUK.  He will be joined by Shelley Heckman from Tameside Council and Programme Manager for iStandUK and Phil Swan, Director for Digital, Greater Manchester Combined Authority and the Chair of iStandUK.
 
-##Time and date
+<br>Time and date<br>
 30 September 2021, 10:00 - 11:00
 
-##Maximum capacity
+<br>Maximum capacity<br>
 
-##Link for joining or signing up
-<br>null<br>61092d1bcc09f730525db77f,611385bf03f48f5750ee5328</p><p><h3>11:00-12:00 UK STATISTICS AUTHORITY: Empowering analysts to consider the ethics of their work: A case study of the UK Statistics Authority’s data ethics framework</h3><br>#Session title<br>Empowering analysts to consider the ethics of their work: A case study of the UK Statistics Authority’s data ethics framework 
+<br>Link for joining or signing up:<br>
+<br>61092d1bcc09f730525db77f,611385bf03f48f5750ee5328</p>
 
-##Short description
+<p><h3>11:00-12:00 UK STATISTICS AUTHORITY: Empowering analysts to consider the ethics of their work: A case study of the UK Statistics Authority’s data ethics framework</h3><br>#Session title
+Empowering analysts to consider the ethics of their work: A case study of the UK Statistics Authority’s data ethics framework 
+
+<br>Short description<br>
 Ensuring use of data in ethically appropriate ways is an important enabler for realising the potential to use data for public good research and statistics. The UK Statistics Authority has developed a framework and portfolio of services to empower analysts to consider the ethics of their research quickly and easily, at the research design phase. This session will provide an overview of this framework and accompanying user support services. 
 
-##Format
+<br>Format<br>
 Case study / show and tell
 
-##Organiser(s) and organisation
+<br>Organiser(s) and organisation<br>
 Lily O'Flynn, UK Statistics Authority
 Simon Whitworth, UK Statistics Authority
 
-##Time and date
+<br>Time and date<br>
 11:00-12:00 30th September 
 
-##Maximum capacity
+<br>Maximum capacity<br>
 
-##Link for joining or signing up
+<br>Link for joining or signing up:<br>
 
 
-<br>2021-09-30T10:00:00.000Z<br>61092d1bcc09f730525db779,611b8e02c43b508336519ffd</p><p><h3>11:00 - 13:00: Central Digital and Data Office - Panel: Trusted access and use of government data</h3><br>#Session title<br>Trusted access and use of government data
+<br>61092d1bcc09f730525db779,611b8e02c43b508336519ffd</p>
 
-##Short description
+<p><h3>11:00 - 13:00: Central Digital and Data Office - Panel: Trusted access and use of government data</h3><br>#Session title
+Trusted access and use of government data
+
+<br>Short description<br>
 
 - Viv Adams, Principal Policy Adviser - ICO
 
@@ -41,50 +103,58 @@ Simon Whitworth, UK Statistics Authority
 
 - Sam Roberts, CDDO - 'Data and public trust: transparency and engagement for meaningful digital transformation'
 
-##Format
+<br>Format<br>
 In person speakers - each presenting followed by roundtable conversation and Q&A
 
-##Organiser(s) and organisation
+<br>Organiser(s) and organisation<br>
 Data Standards Authority
 
-##Time and date
+<br>Time and date<br>
 Thursday 30th September, 11:00 - 13:00
 
 Presented from Piccadilly Gate to an all-virtual audience 
 
-##Link for joining or signing up
-<br>null<br>611385bf03f48f5750ee5328,61092d1bcc09f730525db779</p><p><h3>10:00 - 16:00 DATA STANDARDS AUTHORITY: API Hackathon - Let's build something with government APIs...</h3><br>##Session title<br>API Hackathon
+<br>Link for joining or signing up:<br>
+<br>611385bf03f48f5750ee5328,61092d1bcc09f730525db779</p>
 
-##Short description
+<p><h3>10:00 - 16:00 DATA STANDARDS AUTHORITY: API Hackathon - Let's build something with government APIs...</h3><br>
+Session title:<br>
+API Hackathon
+
+<br>Short description<br>
 APIs in the UK government - a challenge.
 
-##Format
+<br>Format<br>
 Interactive
 
-##Organiser(s) and organisation
+<br>Organiser(s) and organisation<br>
 Charles Baird, Andrew Corbally, Sarah Johns
 
-##Time and date
+<br>Time and date<br>
 Thursday 30th September - 10:00 - 16:00
 
-##Maximum capacity
+<br>Maximum capacity<br>
 50 (max 10 teams)
 
-##Link for joining or signing up
+<br>Link for joining or signing up:<br>
 
 
 
 
 
-<br>null<br>61092d1bcc09f730525db773,61129b879c132c2e5a4d8cf5,61127d38eea26c600b2ebe5b</p><p><h3>[TIME: TBC] ONS / DATA ORCHARD / ENVIRONMENT AGENCY: Data Maturity model [TITLE: TBC], Andy Scofield, ONS - online from Manchester, with Nick and Ben online</h3><br>##Session title<br>Data Maturity models (final title to come)
+<br>61092d1bcc09f730525db773,61129b879c132c2e5a4d8cf5,61127d38eea26c600b2ebe5b</p>
 
-##Short description
+<p><h3>[TIME: TBC] ONS / DATA ORCHARD / ENVIRONMENT AGENCY: Data Maturity model [TITLE: TBC], Andy Scofield, ONS - online from Manchester, with Nick and Ben online</h3><br>
+Session title:<br>
+Data Maturity models (final title to come)
+
+<br>Short description<br>
 Joint session from Government Data Quality Hub, Data Orchard and Environment Agency, showcasing the benefits of using a data maturity model (final description to come)
 
-##Format
+<br>Format<br>
 Case study presentation
 
-##Organiser(s) and organisation
+<br>Organiser(s) and organisation<br>
 Andy Schofield, Government Data Quality Hub
 
 and
@@ -98,50 +168,107 @@ and
 Nick Keen, Data Governance Lead, Environment Agency
 nick.keen@environment-agency.gov.uk
 
-##Time and date
+<br>Time and date<br>
 to be confirmed (Tuesday or Wednesday)
 
-##Maximum capacity
+<br>Maximum capacity<br>
 [If applicable]
 
-##Link for joining or signing up
+<br>Link for joining or signing up:<br>
 [Link goes here]
-<br>null<br>61092d1bcc09f730525db77d,610bfb8edf35781d3d9c7b10</p><p><h3>14:30 - 15:30 INDEX (Information & Data Exchange) session - Cabinet Office</h3><br>The Cabinet Office INDEX (Information & Data Exchange) team is developing a trusted and secure digital service for government to allow people working across HMG to quickly find relevant information, data and services from within and external to government. <br>
+<br>61092d1bcc09f730525db77d,610bfb8edf35781d3d9c7b10</p>
+
+<p><h3>14:30 - 15:30 INDEX (Information & Data Exchange) session - Cabinet Office</h3><br>The Cabinet Office INDEX (Information & Data Exchange) team is developing a trusted and secure digital service for government to allow people working across HMG to quickly find relevant information, data and services from within and external to government. 
+
 Francesca Henshaw - INDEX Product Manager
 Ian Birkmyre - INDEX Project Manager
-Jess Lawrence - INDEX Senior Data Analyst<br>null<br>61092d1bcc09f730525db773,61092d1bcc09f730525db77d,610bfe7c3a24bb7875086b3d</p><p><h3>16.30-17.30 DATA STANDARDS AUTHORITY: API Hackathon results / show & tell</h3><br>##Session title<br>API Hackathon Results
+Jess Lawrence - INDEX Senior Data Analyst<br>61092d1bcc09f730525db773,61092d1bcc09f730525db77d,610bfe7c3a24bb7875086b3d</p>
 
-##Short description
+<p><h3>16.30-17.30 DATA STANDARDS AUTHORITY: API Hackathon results / show & tell</h3><br>
+Session title:<br>
+API Hackathon Results
+
+<br>Short description<br>
 Join us live from Manchester as we present the winners of the API hackathon
 
-##Format
+<br>Format<br>
 Interactive
 
-##Organiser(s) and organisation
+<br>Organiser(s) and organisation<br>
 Charles Baird, Andrew Corbally, Sarah Johns
 
-##Time and date
+<br>Time and date<br>
 Thursday 30th September, 16:30 - 17:30
 
-##Maximum capacity
+<br>Maximum capacity<br>
 
-##Link for joining or signing up
+<br>Link for joining or signing up:<br>
 
 
 
-<br>null<br>61092d1bcc09f730525db773,61129b879c132c2e5a4d8cf5</p><p><h3>[Time] ONS: Level 7 Data Science Training</h3><br>##Session title:<br>Level 7 Data Science Training 
+<br>61092d1bcc09f730525db773,61129b879c132c2e5a4d8cf5</p>
 
-##Short description
+<p><h3>[Time] ONS: Level 7 Data Science Training</h3><br>
+Session title:<br>:
+Level 7 Data Science Training 
 
-##Format
+<br>Short description<br>
+
+<br>Format<br>
 Workshop
 
-##Organiser(s) and organisation
+<br>Organiser(s) and organisation<br>
 Debbie Cooper, ONS
 
-##Time and date
+<br>Time and date<br>
 
-##Maximum capacity
+<br>Maximum capacity<br>
 
-##Link for joining or signing up
-<br>null<br>611b8e02c43b508336519ffd</p>
+<br>Link for joining or signing up:<br>
+<br>611b8e02c43b508336519ffd</p>
+
+<a href="https://www.smartsurvey.co.uk/s/FMR7RF/" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Join our mailing list
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
+
+  
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related links
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="/speakerpack">
+               More information for speakers and session hosts
+              </a>
+            </li>
+            <li>
+              <a href="/schedule" target="self">
+                See the event agenda
+              </a>
+            </li>
+                    <li><a href="/Monday">Monday 27th September</a></li>
+        <li><a href="/Tuesday">Tuesday 28th September</a></li>
+        <li><a href="/Wednesday">Wednesday 29th September</a></li>
+        <li><a href="/Thursday">Thursday 30th September</a></li>
+        <li><a href="/Friday">Friday 1st October</a></li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}
