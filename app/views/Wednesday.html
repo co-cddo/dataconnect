@@ -1,144 +1,95 @@
-<html><p><h3>10:30 - 11:30am - WSo2 Virtual Roundtable - Public Sector</h3><br>##Session Title
-WSo2 Virtual Roundtable - Public Sector
+{% extends "layout.html" %}
 
-Virtual rountable on APIs and data management in the public sector run by API management vendor, WSO2, and chaired by TechUK.
+{% block pageTitle %}
+  DataConnect21
+{% endblock %}
 
-##Format
-Roundtable discussion
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
 
-##Organiser(s) and organisation
-WSO2 / TechUK
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">DataConnect21</a>
+      </li>
+      <!--<li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>-->
+    </ol>
+  </div>
+{% endblock %}
 
-##Time and date
-10:30-11:30am. Wednesday 29th September
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
 
-##Maximum capacity
-n/a
+     <h1 class="govuk-heading-xl">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+		<img src="/public/images/DataConnect21_logo.png" alt="DataConnect Week 2021" width="25%"  style="margin: 0 0 40px 5px;">
+   		
+   		<p><h2>DataConect21 Schedule</h2></p>
+   		
+	  <p>By date:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="/Monday">Monday 27th September</a></li>
+        <li><a href="/Tuesday">Tuesday 28th September</a></li>
+        <li><a href="/Wednesday">Wednesday 29th September</a></li>
+        <li><a href="/Thursday">Thursday 30th September</a></li>
+        <li><a href="/Friday">Friday 1st October</a></li>
 
-##Link for joining or signing up
-https://wso2.com/virtual-roundtable-public-sector
+      </ul>
 
-<br>610bfe7c3a24bb7875086b3d,61092d1bcc09f730525db773,610c5aaf60187f5adf643da3</p><p><h3>10:00 - 10:45 OFFICE FOR NATIONAL STATISTICS Improving coherence of government statistics</h3><br>##Session title:
-Improving coherence of government statistics (GSS Housing and Homelessness team)
+{% include "Wednesday-events.html" %}
 
-##Short description
-The COVID-19 pandemic has reaffirmed the importance of providing the public with coherent and accessible statistics where there are multiple producers.
+<a href="https://www.smartsurvey.co.uk/s/FMR7RF/" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Join our mailing list
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
 
-As statistical producers, we must challenge ourselves not to simply publish a set of numbers, but to explain how they relate to other data on that topic, and how they combine with other statistics to better explain the part of the world they describe. We must also be able to explain the consistency and comparability of statistics across the UK.
+  
+    </div>
 
-Improving the availability and coherence of data links closely to the inclusivity strand the UKSA Statistics for the Public Good strategy.
+    <div class="govuk-grid-column-one-third">
 
-The GSS coherence teams will share examples of how we have worked across the statistical system and developed different products to ensure that our statistics tell a more joined up and coherent story. This is most notable in topic areas which are devolved, meaning across the UK different policies and data collections vary, for example, housing & homelessness, income & earnings and adult social care.
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related links
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="/speakerpack">
+               More information for speakers and session hosts
+              </a>
+            </li>
+            <li>
+              <a href="/schedule" target="self">
+                See the event agenda
+              </a>
+            </li>
+                    <li><a href="/Monday">Monday 27th September</a></li>
+        <li><a href="/Tuesday">Tuesday 28th September</a></li>
+        <li><a href="/Wednesday">Wednesday 29th September</a></li>
+        <li><a href="/Thursday">Thursday 30th September</a></li>
+        <li><a href="/Friday">Friday 1st October</a></li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
 
-This session will challenge statistical producers to develop their system-wide working and collaboration, as well as highlighting similarities and differences in statistics on key topics across the UK for all attendees, allowing the statistics to be more effectively understood. There will also be opportunities to discuss the opportunities and challenges of developing coherent statistics in a dynamic environment of devolved policy making (and divergence), changing user needs, and calls for greater data sharing.
-
-##Format
-
-
-##Organiser(s) and organisation
-
-
-##Time and date
-
-
-##Maximum capacity
-
-##Link for joining or signing up
-<br>61092d1bcc09f730525db77d,61092d1bcc09f730525db77f,611385bf03f48f5750ee5328</p><p><h3>11:00 - 12:00 DQHub ONS: No. 1, Quality Street – what all analysts need to know about data quality</h3><br>##Session title:
-No. 1, Quality Street – what all analysts need to know about data quality. 
-
-##Short description
-As analysts in the public sector you will need to understand the quality of your data. The DQHub would like to invite you to an interactive workshop to explore current practices, challenges, and solutions to assessing data quality. We will cover all stages of analysis, including: understanding your needs, assessing quality, cleaning data, and much more.   
-
-Join us to share and learn from others on how to make sure that your data is fit for purpose!  
-
-##Format
-
-##Organiser(s) and organisation
-Lucia Barbone & Kathryn Reynolds DQHub 
-
-Lucia is an economic adviser, data analysis specialist, and data quality passionate. She focuses on supporting analysts and leaders in understanding and improving the quality of their data, from both a technical and strategic perspective. 
-
-Kathryn is a data specialist with experience working in the public and non-profit sectors. She is passionate about ensuring that data can deliver real impacts for real people and working towards improving data quality in government to enable this. She is currently developing frameworks and guidance to support this mission.  
-
-Kathryn and Lucia work at the Government Data Quality Hub (based at ONS), whose mission is to improve data quality across government and the public sector. Quality data = quality decisions.
-
-
-##Time and date
-Wednesday 29th September 11:00 - 12:00
-
-##Maximum capacity
-
-##Link for joining or signing up
-<br>61092d1bcc09f730525db77d,611b8df2a6a03470255bf4a1,61092d1bcc09f730525db775</p><p><h3>11:00 - 12:00 DQHub ONS Data Quality Action Plans Workshop 2</h3><br>##Session title
-DQAP Workshop 2
-
-##Short description
-small attendance workshop for follow up to DQAP talk
-
-##Format
-workshop
-
-##Organiser(s) and organisation
-Rebecca Strickland, DQHub ONS 
-
-##Time and date
-any time must be after DQAP workshop
-
-##Maximum capacity
-2-3 people
-
-##Link for joining or signing up
-[Link goes here]
-<br>61092d1bcc09f730525db77d</p><p><h3>11.30 - 12.30 OPEN DATA INSTITUTE: Mapping the data initiatives in the UK government - Gavin Freeguard & Lisa Allen</h3><br>'Data' means many different things in government, and there are many organisations with different roles and responsibilities undertaking lots of data-related initiatives. This makes it difficult to keep track of who is doing what. Over the summer, the Open Data Institute has been crowdsourcing a list of the UK government organisations responsible for data and the projects they're involved in. In this session, the ODI discuss what they found with key data leaders in government. 
-Presenters – Gavin Freeguard & Lisa Allen<br>61127e8337b97c858c7145e4</p><p><h3>14:00 - 15:00 DQHub ONS Data Collection Training: tell us what you need!</h3><br>##Session title: Data Collection Training: tell us what you need!
-
-##Short description
-
-##Format
-Workshop
-
-##Organiser(s) and organisation
-Ebony Armstrong and Emma Dickinson, DQHub ONS
-
-##Time and date
-Wednesday 29th September, 14:00-15:00
-
-##Maximum capacity
-
-##Link for joining or signing up
-<br>611b8df2a6a03470255bf4a1,61092d1bcc09f730525db77d,610c5aaf60187f5adf643da3,610bfb8edf35781d3d9c7b10</p><p><h3>15:00 - 16:00 ONS The data science mentoring movement: Learning through helping others grow</h3><br>##Session title: 
-The data science mentoring movement: Learning through helping others grow
-
-##Short description
-
-##Format
-
-##Organiser(s) and organisation
-Jane Crowe ONS
-
-##Time and date
-Wednesday 29th September, 15:00 - 16:00
-
-##Maximum capacity
-
-##Link for joining or signing up
-<br>610c5aaf60187f5adf643da3,611b8e02c43b508336519ffd</p><p><h3>16:00 - 16:30 DATA APPRENTICESHIP SCHEME / DATA STANDARDS AUTHORITY: A personal data journey</h3><br>##Session title:
-A personal data journey
-
-##Short description
-A short personal journey from an data analyst apprentice who had no prior experience of using data
-
-##Format
-Presentation
-
-##Organiser(s) and organisation
-Simon Cox, Data Analyst Apprentice, CDDO
-
-##Time and date
-Wednesday, 16:00-16:30 (30 mins)
-
-##Maximum capacity
-
-##Link for joining or signing up
-<br>610c5aaf60187f5adf643da3,610bfeb1f597af7a27439cc1</p>
+    </div>
+  </div>
+{% endblock %}
