@@ -34,30 +34,30 @@
       </h1>
 		<img src="/public/images/DataConnect21_logo.png" alt="DataConnect Week 2021" width="25%"  style="margin: 0 0 40px 5px;">
    		
-   		<p><h2>DataConnect21 Schedule</h2></p>
+   		<p><h2><h2>DataConnect21 Schedule</h2></p>
    		
-	  <p>By date:</p>
+	  <p><h2>By date:</p>
       <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/Monday">Monday 27th September</a></li>
-        <li><a href="/Tuesday">Tuesday 28th September</a></li>
-        <li><a href="/Wednesday">Wednesday 29th September</a></li>
-        <li><a href="/Thursday">Thursday 30th September</a></li>
-        <li><a href="/Friday">Friday 1st October</a></li>
+        <li><a href="#Monday">Monday 27th September</a></li>
+        <li><a href="#Tuesday">Tuesday 28th September</a></li>
+        <li><a href="#Wednesday">Wednesday 29th September</a></li>
+        <li><a href="#Thursday">Thursday 30th September</a></li>
+        <li><a href="#Friday">Friday 1st October</a></li>
 
       </ul>
 
 <h2>Senior Leaders</h2>
 
-<p>Monday 27th September</p>
-{% include "Senior-Leaders-Monday-events.html" %}
-<p>Tuesday 28th September</p>
-{% include "Senior-Leaders-Tuesday-events.html" %}
-<p>Wednesday 29th September</p>
-{% include "Senior-Leaders-Wednesday-events.html" %}
-<p>Thursday 30th September</p>
-{% include "Senior-Leaders-Thursday-events.html" %}
-<p>Friday 1st October
-{% include "Senior-Leaders-Friday-events.html" %}
+<div id="#Monday"><p><h2>Monday 27th September</h2></p>
+{% include "Senior-Leaders-Monday-events.html" else "nottoday.html" "%} </div></div>
+<div id="#Tuesday"><p><h2>Tuesday 28th September</h2></p>
+{% include "Senior-Leaders-Tuesday-events.html" else "nottoday.html" %} </div>
+<div id="#Wednesday"><p><h2>Wednesday 29th September</h2></p>
+{% include "Senior-Leaders-Wednesday-events.html" else "nottoday.html" %} </div>
+<div id="#Thursday"><p><h2>Thursday 30th September</h2></p>
+{% include "Senior-Leaders-Thursday-events.html" else "nottoday.html" %} </div>
+<div id="#Friday"><p><h2>Friday 1st October</h2></p>
+{% include "Senior-Leaders-Friday-events.html" else "nottoday.html" %} </div>
 
 
 <a href="https://www.eventbrite.co.uk/e/dataconnect21-registration-166632258571" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
