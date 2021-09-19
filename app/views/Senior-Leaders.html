@@ -76,28 +76,16 @@
         <h2 class="govuk-heading-m" id="subsection-title">
           Related links
         </h2>
-        <nav role="navigation" aria-labelledby="subsection-title">
+                <nav role="navigation" aria-labelledby="subsection-title">
           <ul class="govuk-list govuk-!-font-size-16">
-            <li>
-              <a href="/speakerpack">
-               More information for speakers and session hosts
-              </a>
-            </li>
-            <li>
-              <a href="/schedule" target="self">
-                See the event agenda
-              </a>
-            </li>
-                    <li><a href="#Monday">Monday 27th September</a></li>
-        <li><a href="#Tuesday">Tuesday 28th September</a></li>
-        <li><a href="#Wednesday">Wednesday 29th September</a></li>
-        <li><a href="#Thursday">Thursday 30th September</a></li>
-        <li><a href="#Friday">Friday 1st October</a></li>
+                {% include "relatedlinks.html" ignore missing%}
+<!-- 
             <li>
               <a href="#" class="govuk-!-font-weight-bold">
                 More <span class="govuk-visually-hidden">in Subsection</span>
               </a>
             </li>
+ -->
           </ul>
         </nav>
       </aside>
