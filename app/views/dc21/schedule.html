@@ -36,29 +36,12 @@
    		
    		<p><h2>DataConnect21 Schedule</h2></p>
    		
-	  <div id="date"><p>By date:</p>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/dc21/Monday">Monday 27th September</a></li>
-        <li><a href="/Tuesday">Tuesday 28th September</a></li>
-        <li><a href="/Wednesday">Wednesday 29th September</a></li>
-        <li><a href="/Thursday">Thursday 30th September</a></li>
-        <li><a href="/Friday">Friday 1st October</a></li>
-
-      </ul></div>
       
-	  <div id="categories"><p>By Category:</p>
-      <ul class="govuk-list govuk-list--bullet">
-
-      <!-- {% include "categories.html" %} -->
-	  
-	  </ul>
-      </div>
-      
-      {% include "Monday-summary-events.html" %}
-      {% include "Tuesday-summary-events.html" %}
-      {% include "Wednesday-summary-events.html" %}
-      {% include "Thursday-summary-events.html" %}
-      {% include "Friday-summary-events.html" %}
+      {% include "/app/app/views/dc21/Monday-summary-events.html" %}
+      {% include "/app/app/views/dc21/Tuesday-summary-events.html" %}
+      {% include "/app/app/views/dc21/Wednesday-summary-events.html" %}
+      {% include "/app/app/views/dc21/Thursday-summary-events.html" %}
+      {% include "/app/app/views/dc21/Friday-summary-events.html" %}
 
 
 	
@@ -80,7 +63,7 @@
         </h2>
         <nav role="navigation" aria-labelledby="subsection-title">
           <ul class="govuk-list govuk-!-font-size-16">
-                {% include "relatedlinks.html" ignore missing%}
+                {% include "/app/app/views/dc21/relatedlinks.html" ignore missing%}
 <!-- 
             <li>
               <a href="#" class="govuk-!-font-weight-bold">
