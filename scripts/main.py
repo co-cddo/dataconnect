@@ -48,15 +48,15 @@ def filter_green_cards(cards):
 def write_to_file(weekday_lists):
     for weekday_list in weekday_lists:
         file = open('app/views/dc22/' + weekday_list['name'].split(' ', 1)[0] + '-events.html', 'w')
-        file.write('<p><h2>' + weekday_list['name'].split(' ', 1)[0] + '</h2></p>')
+        file.write('<p><h2 class="govuk-heading-m">' + weekday_list['name'].split(' ', 1)[0] + '</h2></p>')
         summary_file = open('app/views/dc22/' + weekday_list['name'].split(' ', 1)[0] + '-summary-events.html', 'w')
-        summary_file.write('<p><h2>' + weekday_list['name'].split(' ', 1)[0] + '</h2></p>')
+        summary_file.write('<p><h2 class="govuk-heading-m">' + weekday_list['name'].split(' ', 1)[0] + '</h2></p>')
         cards = get_cards(weekday_list)
         filtered_cards = filter_green_cards(cards)
         for card in filtered_cards:
             description = format_signup_link(card['desc'])
             anchor_id = card['name'].replace(" ", "-")
-            file.write('<h2 id=' + anchor_id + '>' + card['name'] + '</h2><p>' + description + '</p>')
+            file.write('<h2 class="govuk-heading-m" id=' + anchor_id + '>' + card['name'] + '</h2><p>' + description + '</p>')
             summary_file.write('<p><a href=https://dataconnect.api.gov.uk/dc22/#' + anchor_id + '>' + card['name'] + '</a></p><br>')
             if 'https://www.eventbrite.co' in description:
                 file.write(get_code_to_embed_eventbrite(get_eventbrite_id(description)))
