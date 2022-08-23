@@ -55,8 +55,9 @@ def write_to_file(weekday_lists):
         filtered_cards = filter_green_cards(cards)
         for card in filtered_cards:
             description = format_signup_link(card['desc'])
-            file.write('<h2>' + card['name'] + '</h2><p>' + description + '</p>')
-            summary_file.write('<p>' + card['name'] + '</p><br>')
+            anchor_id = card['name'].replace(" ", "-")
+            file.write('<h2 id=' + anchor_id + '>' + card['name'] + '</h2><p>' + description + '</p>')
+            summary_file.write('<p><a href=https://dataconnect.api.gov.uk/dc22/#' + anchor_id + '>' + card['name'] + '</a></p><br>')
             if 'https://www.eventbrite.co' in description:
                 file.write(get_code_to_embed_eventbrite(get_eventbrite_id(description)))
 
