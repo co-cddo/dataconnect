@@ -7,6 +7,9 @@
 {% block header %}
   <!-- Blank header with no service name for the start page -->
   {{ govukHeader() }}
+    {% block bannerContent %}
+        {% include "includes/banner.html" %}
+    {% endblock %}
 {% endblock %}
 
 {% block beforeContent %}
