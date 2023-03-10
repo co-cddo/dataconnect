@@ -9,7 +9,8 @@ def get_lists_on_board():
         'key': os.environ['API_KEY'],
         'token': os.environ['API_TOKEN'],
     }
-    r = requests.get('https://api.trello.com/1/boards/627baf325445ee61e602441f/lists', params=params)
+
+    r = requests.get('https://api.trello.com/1/boards/63f8b560e5938656c0dc9a65/lists', params=params)
     return r.json()
 
 
@@ -47,9 +48,9 @@ def filter_green_cards(cards):
 
 def write_to_file(weekday_lists):
     for weekday_list in weekday_lists:
-        file = open('app/views/dc22/' + weekday_list['name'].split(' ', 1)[0] + '-events.html', 'w')
+        file = open('../app/views/dc23/' + weekday_list['name'].split(' ', 1)[0] + '-events.html', 'w')
         file.write('<p><h2 class="govuk-heading-m">' + weekday_list['name'].split(' ', 1)[0] + '</h2></p>')
-        summary_file = open('app/views/dc22/' + weekday_list['name'].split(' ', 1)[0] + '-summary-events.html', 'w')
+        summary_file = open('../app/views/dc23/' + weekday_list['name'].split(' ', 1)[0] + '-summary-events.html', 'w')
         summary_file.write('<p><h2 class="govuk-heading-m">' + weekday_list['name'].split(' ', 1)[0] + '</h2></p>')
         cards = get_cards(weekday_list)
         filtered_cards = filter_green_cards(cards)
@@ -57,7 +58,7 @@ def write_to_file(weekday_lists):
             description = format_signup_link(card['desc'])
             anchor_id = card['name'].replace(" ", "-")
             file.write('<h2 class="govuk-heading-m" id=' + anchor_id + '>' + card['name'] + '</h2><p>' + description + '</p>')
-            summary_file.write('<p><a href=https://dataconnect.api.gov.uk/dc22/#' + anchor_id + '>' + card['name'] + '</a></p><br>')
+            summary_file.write('<p><a href=https://dataconnect.api.gov.uk/dc23/#' + anchor_id + '>' + card['name'] + '</a></p><br>')
             if 'https://www.eventbrite.co' in description:
                 file.write(get_code_to_embed_eventbrite(get_eventbrite_id(description)))
 
