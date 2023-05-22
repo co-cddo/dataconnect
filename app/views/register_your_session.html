@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  DataConnect - egister your session
+  DataConnect - Register your session
 {% endblock %}
 
 {% block header %}
@@ -38,14 +38,10 @@
       <p class="govuk-body">There are two routes to register your session for DataConnect23</p>
       <ol class="govuk-list govuk-list--number">
         <li>
-          <a href="#basic-session-details">
-            Basic session details - get on pencilled into schedule and update details as you go
-          </a>
+          Basic session details - tentatively reserve a place on the schedule
         </li>
         <li>
-          <a href="#full-session-details">
-            Full session details - you’ve got all your info and are ready to go
-          </a>
+          Full session details - you’ve got all your info and are ready to go
         </li>
       </ol>
 
@@ -116,7 +112,10 @@
 
       <h3 class="govuk-heading-m">We’re here to help</h3>
       <p class="govuk-body">
-        Our cross-government organising team is keen to give you the support you need to run a successful session. If you query hasn’t been answered here, please get in touch
+        Our cross-government organising team is keen to give you the support you need to run a successful session. If you query hasn’t been answered here,
+        <a href="mailto:dataconnect@digital.cabinet-office.gov.uk">
+          please get in touch.
+        </a>
       </p>
       <p class="govuk-body">
         DataConnect23 is coordinated by the Central Digital and Data Office (Cabinet Office) and the Data Quality Hub (ONS) on behalf of participants. Our role is as enablers of the programme and its aims.
@@ -124,9 +123,16 @@
 
       <h3 class="govuk-heading-m">Privacy</h3>
       <p class="govuk-body">
-        Any personal information you provide as part of participating in DataConnect23 are managed in accordance with this privacy policy.
+        Any personal information you provide as part of participating in DataConnect23 are managed in accordance with this
+        <a href="https://www.gov.uk/government/publications/communicating-with-gds-privacy-notice/communicating-with-gds-privacy-notice">
+          privacy policy.
+        </a>
       </p>
 
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      {% include "includes/sidebar.html" %}
     </div>
   </div>
 
