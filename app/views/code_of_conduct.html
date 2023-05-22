@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  DataConnect - Code of Conduct
+{% endblock %}
+
+{% block header %}
+    <!-- Blank header with no service name for the start page -->
+    {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">DataConnect</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Code of Conduct</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Participant Code of Conduct</h2>
+
+      <img src="/public/images/DataConnect21_logo.png" alt="DataConnect Week 2021" width="30%" style="margin: 0 0 40px 50px;">
+
+      <h2 class="govuk-heading-l">DataConnect23</h2>
+
+      <p class="govuk-body">To establish and maintain an inclusive environment for DataConnect, we ask participants to abide the following code of conduct:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          Have respect for all fellow participants. We uphold participation for everyone regardless of age, disability, gender identity/expression, gender reassignment, marriage and civil partnership, pregnancy and maternity, race, religion or belief, sex, and sexual orientation.
+        </li>
+        <li>
+          Make your session as accessible as possible – be mindful of technology choices. Various presentation, video and streaming conferencing tools allow automatic captioning. Consider asking participants before the event what access needs they require. You might want to provide slides ahead of time.
+        </li>
+        <li>
+          Be aware not all organisations have access to the same services and tools. We can expect people to prefer different solutions for video conferencing, for example. You might want to consider recording your session to make it available for those who cannot attend or access. You will need to ask for consent when recording.
+        </li>
+        <li>
+          Help create a safe and welcoming environment. We can do this by being open to diverse points of view, by inviting new people to join and by keeping things people share confidential if they specify it.
+        </li>
+        <li>
+          Do not assume everyone has the same context. Encourage questions.
+        </li>
+        <li>
+          Listen to others, and ensure that all activities are respectful, participatory, and productive.
+        </li>
+        <li>
+          Consider your environment and minimise loud noises. Have empathy for others in different situations who may not be able to control their environment. Consider muting your microphone when entering a session unless you want to contribute.
+        </li>
+        <li>
+          Do not criticise the work of others – provide constructive feedback instead. (See govdesign posters on giving, asking for, and receiving feedback (pdf))
+        </li>
+        <li>
+          Be present – when attending a session please arrive on time, be engaged and stay for the whole event.
+        </li>
+        <li>
+          If you’re unable to attend, please cancel your ticket as soon as possible so people on the waitlist can attend.
+        </li>
+        <li>
+          Attendees should not record video or take photographs of sessions run unless permitted by session owners. You can take screenshots of presentation slides for personal use or sharing within a government context unless stated otherwise by the session owners.
+        </li>
+        <li>
+          Be circumspect about what you share on social media. DataConnect is primarily an internal event for public and civil servants. Do not share any content, insights or links from sessions without the explicit permission of the session owners.
+        </li>
+        <li>
+          The event organisers reserve the right to ask anyone in violation of these policies to not participate in further activities.
+        </li>
+        <li>
+          Session owners will reinforce this code throughout DataConnect engagements.
+        </li>
+        <li>
+          If you have any concerns, please contact the DataConnect planning team.
+        </li>
+      </ul>
+
+      <p class="govuk-body">
+        (These guidelines are adapted from the Practical Service Design community guidelines, Afrotech Fest, Code for America, UKGovcamp codes of conduct.)
+      </p>
+      <p class="govuk-body">Last updated: 19 May 2023</p>
+
+    </div>
+  </div>
+
+{% endblock %}
