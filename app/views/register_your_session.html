@@ -1,0 +1,133 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  DataConnect - egister your session
+{% endblock %}
+
+{% block header %}
+    <!-- Blank header with no service name for the start page -->
+    {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">DataConnect</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Register your session</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Get your session on the DataConnect23 schedule</h1>
+
+      <img src="/public/images/DataConnect21_logo.png" alt="DataConnect Week 2021" width="30%" style="margin: 0 0 40px 50px;">
+
+      <h2 class="govuk-heading-l">DataConnect23</h2>
+      <h2 class="govuk-heading-l">Register your session</h2>
+
+      <p class="govuk-body">There are two routes to register your session for DataConnect23</p>
+      <ol class="govuk-list govuk-list--number">
+        <li>
+          <a href="#basic-session-details">
+            Basic session details - get on pencilled into schedule and update details as you go
+          </a>
+        </li>
+        <li>
+          <a href="#full-session-details">
+            Full session details - you’ve got all your info and are ready to go
+          </a>
+        </li>
+      </ol>
+
+
+      <h3 class="govuk-heading-m" id="basic-session-details">1. Basic session details</h3>
+
+      <p class="govuk-body">
+        We need some basic details to tentatively reserve a place on the schedule. You will then need to provide the full details by the end of July, but preferably sooner. The sooner we have your full session details the sooner we can publish it to the schedule and promote it to potential attendees.
+      </p>
+
+      <p class="govuk-body">We need to know:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Name, organisation and email address of the primary session contact</li>
+        <li>Proposed session title (max. 100 characters)</li>
+        <li>Proposed session description (max. 500 characters)</li>
+        <li>Preferred date and time</li>
+      </ul>
+
+      <p class="govuk-body">
+        <a href="https://surveys.domains.gov.uk/s/DC23_BasicSessionDetails_form">
+          Use this form to reserve a place for your session with basic details.
+        </a>
+      </p>
+
+      <h4 class="govuk-heading-s">What happens next?</h4>
+      <p class="govuk-body">
+        Full details for your session are required by end of July 2023 to ensure a place on the schedule. See the list under ‘Full session details’ for the additional information you will need to provide.
+      </p>
+
+      <h3 class="govuk-heading-m" id="full-session-details">2. Full session details</h3>
+      <p class="govuk-body">
+        You know what you’re doing, this isn’t your first DataConnect after all. You know the who, what and when for your session
+      </p>
+
+
+      <p class="govuk-body">We need to know:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Name, organisation and email address of the primary session contact</li>
+        <li>Lead organisation for this session</li>
+        <li>Names and organisations of all session speakers</li>
+        <li>Session title (max. 100 characters)</li>
+        <li>Session description (max. 200 words)</li>
+        <li>Preferred date and time on the DataConnect23 schedule</li>
+        <li>Length of session</li>
+        <li>Open or closed session (open to any attendees or public sector only)</li>
+        <li>Image upload, eg logo for use on the attendee registration page for your session</li>
+      </ul>
+
+      <p class="govuk-body">
+        <a href="https://surveys.domains.gov.uk/s/DC23_SessionRegistration_fulldetails/">
+          Use this form to register your full session details.
+        </a>
+      </p>
+
+      <h4 class="govuk-heading-s">What happens next?</h4>
+      <p class="govuk-body">
+        The organisers will set up an attendee registration page for your session on the Data Connect Eventbrite booking platform, and share the link with the main contact.
+      </p>
+      <p class="govuk-body">
+        We will add the booking link to your session information on the DataConnect23 schedule published on this site.
+      </p>
+      <p class="govuk-body">
+        You will need to provide a video conferencing link (eg a Teams link) for your session, which we will add to the booking platform to be sent to registered attendees.
+      </p>
+      <p class="govuk-body">
+        We anticipate publishing the first schedule in early July, and will continue to update the schedule as sessions are registered.
+      </p>
+
+      <h3 class="govuk-heading-m">We’re here to help</h3>
+      <p class="govuk-body">
+        Our cross-government organising team is keen to give you the support you need to run a successful session. If you query hasn’t been answered here, please get in touch
+      </p>
+      <p class="govuk-body">
+        DataConnect23 is coordinated by the Central Digital and Data Office (Cabinet Office) and the Data Quality Hub (ONS) on behalf of participants. Our role is as enablers of the programme and its aims.
+      </p>
+
+      <h3 class="govuk-heading-m">Privacy</h3>
+      <p class="govuk-body">
+        Any personal information you provide as part of participating in DataConnect23 are managed in accordance with this privacy policy.
+      </p>
+
+    </div>
+  </div>
+
+{% endblock %}
