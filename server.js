@@ -277,6 +277,17 @@ app.get(/\.html?$/i, function (req, res) {
 
 // Auto render any view that exists
 
+// Render PDFs
+app.get(/\.pdf?$/i, function(req, res) {
+  let pdf_path = __dirname + "/app/views/pdf/" + req.path
+  if (fs.existsSync(pdf_path)) {
+    res.sendFile(pdf_path);
+  } else {
+    res.status(500)
+    res.send('File not found')
+  }
+})
+
 // App folder routes get priority
 app.get(/^([^.]+)$/, function (req, res, next) {
   utils.matchRoutes(req, res, next)
