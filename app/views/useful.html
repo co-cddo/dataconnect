@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  DataConnect - Useful Information
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="/">DataConnect</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Useful Information</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Useful Information</h1>
+
+
+      <img src="/public/images/DataConnect21_logo.png" alt="DataConnect Week 2021" width="30%" style="margin: 0 0 40px 50px;">
+
+
+
+      <h2 class="govuk-heading-l">DataConnect23</h2>
+
+      <h3 class="govuk-heading-m">Bring it together</h3>
+      <h3 class="govuk-heading-m">25 - 29 September 2023</h3>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a href="/DCEvent_DataLinking_BOLDMoJ_20230523.pdf">
+            BOLD Programme Overview
+          </a>
+        </li>
+        <li>
+          <a href="/DCEvent_DataMaturity_FCDO_20230523pdf.pdf">
+            FCDO Data Maturity Assessment
+          </a>
+        </li>
+        <li>
+          <a href="/DCEvent_DataMaturity_UKHSA_20230523.pdf">
+            Data Maturity Assessments
+          </a>
+        </li>
+        <li>
+          <a href="/DCEvent_DataSciencePtFeedback_NHS_20230523.pdf">
+            What good data science looks like
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="govuk-grid-column-one-third">
+      {% include "includes/sidebar.html" %}
+    </div>
+  </div>
+{% endblock %}
