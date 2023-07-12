@@ -1,1 +1,83 @@
+{% extends "layout.html" %}
 
+{% block pageTitle %}
+  DataConnect23
+{% endblock %}
+
+{% block header %}
+    <!-- Blank header with no service name for the start page -->
+    {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">DataConnect23</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        DataConnect23
+      </h1>
+
+      <h3 class="govuk-heading-m" id="data-connect-is-coming">25 - 29 September 2023</h3>
+
+      <p class="govuk-body">
+        DataConnect23 is a week-long series of presentations, webinars, show and tells, demonstrations, case studies, discussions and panels. The programme is open to all and is delivered by the community, for the community.
+      </p>
+      <p class="govuk-body">
+        The Central Digital and Data Office in Cabinet Office and the Data Quality Hub in ONS coordinate DataConnect23 on behalf of participants.
+      </p>
+
+      <h2 id="upcoming-events">Upcoming events</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Event</th>
+      <th scope="col">Date</th>
+      <th scope="col">Organiser</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a rel="external" href="https://african-chamber.com/manchester-africa-forum" class="govuk-link">Manchester – Africa Business Forum</a></td>
+      <td>23 March 2023</td>
+      <td>Africa Business Chamber</td>
+    </tr>
+    <tr>
+      <td><a rel="external" href="https://www.eventbrite.co.uk/e/afbc-uk-nigeria-investment-forum-tickets-498737666787" class="govuk-link">UK-Nigeria Investment Forum</a></td>
+      <td>19 April 2023</td>
+      <td>Africa Business Chamber</td>
+    </tr>
+    <tr>
+      <td><a rel="external" href="https://theafricadebate.com/" class="govuk-link">The Africa Debate</a></td>
+      <td>11 May 2023</td>
+      <td>Invest Africa</td>
+    </tr>
+    <tr>
+      <td><a rel="external" href="https://www.afsic.net/welcome/" class="govuk-link">AFSIC Investing in Africa Conference and Expo</a></td>
+      <td>9 October 2023</td>
+      <td>Africa Events Ltd</td>
+    </tr>
+    <tr>
+      <td><a rel="external" href="https://www.gtreview.com/events/europe/gtr-africa-2023-london/" class="govuk-link">Global Trade Review Africa 2023 London</a></td>
+      <td>November 2023</td>
+      <td>Global Trade Review</td>
+    </tr>
+  </tbody>
+</table>
+
+    
+  </div>
+{% endblock %}
