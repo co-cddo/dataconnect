@@ -106,8 +106,26 @@
 <br/>Rachel Smaldon, Devon County Council</p>
   </div>
 
-     <div id="eventbrite-widget-container-690891985527"></div> <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script><script type="text/javascript">var exampleCallback = function() {console.log('Order complete!');};window.EBWidgets.createWidget({widgetType: 'checkout',eventId: '690891985527',iframeContainerId: 'eventbrite-widget-container-690891985527',});</script>
-    <a href="https://www.eventbrite.co.uk/e/data-ethics-putting-theory-into-practice-at-devon-county-council-tickets-690891985527?aff=ebdsoporgprofile">Eventbrite page</a>
+<!-- Noscript content for added SEO -->
+<noscript><a href="https://www.eventbrite.co.uk/e/user-centred-design-and-the-data-marketplace-making-user-centred-decisions-tickets-690808826797" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+<!-- You can customise this button any way you like -->
+<button id="eventbrite-widget-modal-trigger-690808826797" type="button">Order a free ticket</button>
+
+<script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '690808826797',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-690808826797',
+        onOrderComplete: exampleCallback
+    });
+</script>
     
 
         </main>
